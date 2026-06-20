@@ -5,7 +5,7 @@ export async function getRecentRepos() {
     `https://api.github.com/users/${username}/repos?sort=updated`,
     {
       headers: {
-        Authorization: `Bearer ${process.env.GGITHUB_TOKEN}`,
+        Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
       },
       next: { revalidate: 3600 },
     }
