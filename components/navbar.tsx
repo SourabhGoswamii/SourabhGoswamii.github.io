@@ -42,7 +42,7 @@ export default function Navbar() {
             href="/"
             className="text-[#4f46e5] dark:text-[#7c8cf8] font-bold text-[26px] tracking-tight"
           >
-            Sourabh.me
+            Sourabh
           </Link>
 
           <span className="hidden sm:block text-black/20 dark:text-white/20 text-[22px] font-light">
