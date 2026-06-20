@@ -13,6 +13,11 @@ export async function getRecentRepos() {
 
   const repos = await reposRes.json();
 
+  if (!Array.isArray(repos)) {
+    console.error("GitHub API error:", repos);
+    return [];
+  }
+
   const oneMonthAgo = new Date();
   oneMonthAgo.setDate(oneMonthAgo.getDate() - 30);
 
