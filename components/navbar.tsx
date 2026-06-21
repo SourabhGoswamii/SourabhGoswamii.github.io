@@ -72,28 +72,13 @@ export default function Navbar() {
             </Link>
           ))}
 
+          <span className="w-px h-6 bg-black/10 dark:bg-white/10 mx-3" />
           <Link
             href="/resume"
             className="relative px-5 py-2.5 text-[16px] text-[#4f46e5] dark:text-[#7c8cf8] group rounded-md hover:bg-[#4f46e5]/[0.06] dark:hover:bg-[#7c8cf8]/[0.06]"
           >
             Resume
           </Link>
-
-          <span className="w-px h-6 bg-black/10 dark:bg-white/10 mx-3" />
-
-          {/* THEME */}
-          {mounted && (
-            <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="w-[40px] h-[40px] rounded-lg flex items-center justify-center hover:bg-black/5 dark:hover:bg-white/[0.06] transition-colors"
-            >
-              {theme === "dark" ? (
-                <Sun size={20} className="text-amber-400" />
-              ) : (
-                <Moon size={20} className="text-gray-600" />
-              )}
-            </button>
-          )}
         </div>
       </div>
     </nav>
