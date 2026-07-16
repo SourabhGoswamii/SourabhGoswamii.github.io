@@ -48,7 +48,10 @@ const projects = {
       description: "AI mental health assistant for rural areas",
       tag: "AI / Health",
       active: true,
-      links: [],
+      links: [
+        "https://github.com/SourabhGoswamii/Medcare-medical-management-system",
+        "https://medcare-medical-management-system-c.vercel.app/",
+      ],
     },
     
   ],
