@@ -26,27 +26,18 @@ const projects = {
       ],
     },
     {
-      name: "Medcare",
-      description: "Blockchain-based healthcare system",
-      tag: "Blockchain",
-      active: true,
-      links: [
-        "https://github.com/SourabhGoswamii/Medcare-medical-management-system",
-      ],
-    },
-    {
       name: "AI for Healthcare",
       description: "MRI scan AI model for disease detection",
-      tag: "ML / Vision",
+      tag: "ML  / Vision",
       active: true,
       links: [
         "https://github.com/SourabhGoswamii/AI-for-Healthcare_AASTRA_Parth-Khera",
       ],
     },
     {
-      name: "MindMed",
-      description: "AI mental health assistant for rural areas",
-      tag: "AI / Health",
+      name: "MEDCARE",
+      description: "Blockchain-based healthcare system",
+      tag: "Blockchain /AI /HEALTHCARE",
       active: true,
       links: [
         "https://github.com/SourabhGoswamii/Medcare-medical-management-system",
