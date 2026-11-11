@@ -5,7 +5,18 @@ import { ArrowUpRight, Circle, Wrench } from "lucide-react";
 
 const projects = {
   current: [
-     {
+    {
+      name: "MERCH-MIND",
+      description:
+        "AI-powered merchant growth agent for data-driven business insights and growth strategy recommendations",
+      tag: "AI Agents",
+      active: true,
+      links: [
+        "https://github.com/SourabhGoswamii/Merch-Mind",
+        "https://merch-nu-nine.vercel.app/",
+      ],
+    },
+    {
       name: "DataWash RL Environment",
       description: "RL-based dataset cleaning environment (OpenEnv)",
       tag: "Reinforcement Learning",
@@ -44,7 +55,6 @@ const projects = {
         "https://medcare-medical-management-system-c.vercel.app/",
       ],
     },
-    
   ],
   past: [],
 };
@@ -76,7 +86,10 @@ function ProjectRow({ project }: { project: (typeof projects.current)[0] }) {
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400" />
             </span>
           ) : (
-            <Circle size={10} className="text-gray-900 dark:text-white/20 fill-white/10" />
+            <Circle
+              size={10}
+              className="text-gray-900 dark:text-white/20 fill-white/10"
+            />
           )}
         </div>
 
@@ -84,7 +97,9 @@ function ProjectRow({ project }: { project: (typeof projects.current)[0] }) {
         <div className="flex flex-col gap-1 min-w-0">
           <span
             className={`text-[18px] font-semibold tracking-tight transition-colors duration-200 ${
-              hovered ? "text-gray-900 dark:text-white" : "text-gray-900 dark:text-white/85"
+              hovered
+                ? "text-gray-900 dark:text-white"
+                : "text-gray-900 dark:text-white/85"
             }`}
           >
             {project.name}
