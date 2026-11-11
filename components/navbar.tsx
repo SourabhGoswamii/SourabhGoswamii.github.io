@@ -2,17 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Sun, Moon } from "lucide-react";
-import { useTheme } from "@/components/ThemeProvider";
 
 export default function Navbar() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
   const [city, setCity] = useState("Loading...");
   const [temp, setTemp] = useState("--");
 
   useEffect(() => {
-    setMounted(true);
     async function fetchWeather() {
       try {
         const res = await fetch("https://wttr.in/Paonta+Sahib?format=j1");
@@ -34,7 +29,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="w-full backdrop-blur-md bg-transparent sticky top-0 z-50">
+    <nav className="sticky top-0 z-50 w-full border-b border-white/10 bg-transparent backdrop-blur-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-10 h-[72px]">
         {/* LEFT */}
         <div className="flex items-center gap-4">
