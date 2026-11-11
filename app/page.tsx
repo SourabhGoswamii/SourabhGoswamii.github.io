@@ -65,7 +65,7 @@ export default async function Home() {
             </span>
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div>
             {projects.map((project: { url: string; name: string; active: boolean; description: string }, index: number) => (
               <div key={index} className="group relative rounded-2xl border border-white/10 bg-black/5 px-5 py-4 transition hover:border-blue-500/30">
                 <div className="flex items-center justify-between gap-4">
